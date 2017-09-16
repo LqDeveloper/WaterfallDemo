@@ -47,7 +47,7 @@
         _dataArray = @[@"麻棉连衣裙", @"面条", @"亲子装",
                        @"面包", @"洗洁精", @"咖啡速溶",
                        @"卫生巾", @"米", @"眉笔", @"蛋糕",
-                       @"云南白药牙膏", @"方便面", @"空调"].mutableCopy;
+                       @"云南白药牙膏", @"方便面", @"空调",@"南白药牙膏",@"小明",@"大家好",@"然后",@"一起浪"].mutableCopy;
     }
     return _dataArray;
 }
@@ -59,7 +59,7 @@
     return _widthArr;
 }
 -(void)getAllTitleHeight{
-    CGFloat marginWidth = 5;
+    CGFloat marginWidth = 10;
      _collectionWidth = 200;
     for (NSString *title in self.dataArray) {
         CGSize size  =[self calculateContentSize:title];
@@ -149,17 +149,17 @@
     return CGSizeMake(size.width, 20);
 }
 
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return 5; //列间距
-}
+//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+//    return 5; //列间距
+//}
+//
+//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+//    return 5;//行间距
+//}
 
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return 5;//行间距
-}
-
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(5, 5, 5, 5);
-}
+//- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+//    return UIEdgeInsetsMake(5, 5, 5, 5);
+//}
 
 
 
